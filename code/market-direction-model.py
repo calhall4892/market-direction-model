@@ -1,6 +1,10 @@
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+import matplotlib as plt
 
 # The thousands part is saying to treat any ',' as 1000
 df = pd.read_csv(r'C:\Users\Callum\Documents\ML Researcher\market-direction-model\data\Download Data - INDEX_UK_FTSE UK_UKX.csv', thousands = ',')
@@ -25,3 +29,12 @@ print(y_train)
 logreg = LogisticRegression(random_state = 16)
 logreg.fit(X_train, y_train)
 y_pred = logreg.predict(X_test)
+
+# This is the calculation of the accuracy score used in classification models.
+A_S = accuracy_score(y_test, y_pred)
+
+print(f'The score is {A_S:.2f}')
+
+# setting up the confusion matrix
+cf_matrix = confusion_matrix(y_test, y_pred)
+
