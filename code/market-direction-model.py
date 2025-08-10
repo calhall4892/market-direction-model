@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 import seaborn as sns
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 # The thousands part is saying to treat any ',' as 1000
 df = pd.read_csv(r'C:\Users\Callum\Documents\ML Researcher\market-direction-model\data\Download Data - INDEX_UK_FTSE UK_UKX.csv', thousands = ',')
@@ -37,4 +37,13 @@ print(f'The score is {A_S:.2f}')
 
 # setting up the confusion matrix
 cf_matrix = confusion_matrix(y_test, y_pred)
+print(cf_matrix)
 
+sns.heatmap(cf_matrix, fmt='g', cmap='Blues', annot=True)
+
+# Plot title and labels
+plt.title('Confusion Matrix for market direction model')
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+
+plt.show()
