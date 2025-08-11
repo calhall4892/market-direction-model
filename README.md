@@ -10,7 +10,7 @@ A simple **classification** model to predict the movement of the FTSE 100 stock 
 
 ## Project Structure
 
-'''
+```
 market-direction-model/
 ├── data/
 │   └── Download Data - INDEX_UK_FTSE UK_UKX.csv
@@ -19,7 +19,7 @@ market-direction-model/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-'''
+```
 
 ## Getting Started
 
