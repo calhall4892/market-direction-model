@@ -29,6 +29,6 @@ market-direction-model/
 
 ## Purpose
 
-This model was created to further advance and enhance my **learning** into **classification models**. This code is to be used in part with the associated mathematics found in `ml-research-journal` in order to give the most complete understanding of the model.
+This model was created to further advance and enhance my **learning** into **classification models**. This code is to be used in part with the associated mathematics found in `ml-research-journal` in order to give the most complete understanding of the model. The algorithm that is used is a logistic regression model.
 
 When creating this model, a problem occurred while trying to add titles and labels to the confusion matrix. This was caused by the loading of incorrect packages so care and attention must be paid when moving forward.
