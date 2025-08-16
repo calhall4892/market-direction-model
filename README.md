@@ -1,7 +1,6 @@
 # market-direction-model
 
-A simple **classification** model to predict the movement of the FTSE 100 stock index. The model predicts a rise or a falk.
-
+A simple **classification** model to predict the movement of the FTSE 100 stock index. The model predicts a rise or a fall.
 ## Data
 
 * **Market:** FTSE 100
